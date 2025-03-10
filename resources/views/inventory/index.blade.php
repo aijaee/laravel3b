@@ -1,1 +1,3 @@
-inventory page
+@extends (template.main)
+
+@section('content')

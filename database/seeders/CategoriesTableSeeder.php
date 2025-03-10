@@ -16,6 +16,8 @@ class CategoriesTableSeeder extends Seeder
             ['id' => 3, 'name' => 'Education', 'description' => 'Resources for students and teachers.'],
             ['id' => 4, 'name' => 'Home & Living', 'description' => 'Furniture, decor, and essentials for your home.'],
             ['id' => 5, 'name' => 'Sports & Outdoors', 'description' => 'Gear and equipment for various outdoor activities and sports.'],
+            'created_at'=> now(),
+            'updated_at'=> now(),
         ]);
     }
 }
