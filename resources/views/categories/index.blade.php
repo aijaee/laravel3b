@@ -1,14 +1,30 @@
-<!-- resources/views/index.blade.php -->
 @extends('template.main')
 
-@section('title', 'Inventory Page')
+@section('title', 'Category List')
 
-@section('current')
-  <div class="row">
-    <div class="col">
-      <h1>Welcome to the Inventory Page!</h1>
-      <p>This is the main content of the inventory page.</p>
-      <!-- Add more content here -->
-    </div>
-  </div>
+@section('content')
+
+<div class="container mt-4">
+    <h1>Category List</h1>
+    
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Category Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+           <!-- @foreach($categories as $category)
+            <tr>
+                <td>{{ $category->id }}</td>
+                <td>{{ $category->name }}</td>
+                <td>{{ $category->description }}</td>
+            </tr>
+            @endforeach -->
+        </tbody>
+    </table>
+</div>
+
 @endsection
